@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 - Present id.redlyst@gmail.com / https://github.com/redlyst/
+  ~ This file is subject to the terms and conditions defined in
+  ~ file 'LICENSE.txt', which is part of this source code package.
+  ~
+  -->
+
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CardStyle">
+    <LinearLayout
+            android:padding="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <ImageView
+                android:adjustViewBounds="true"
+                android:id="@+id/thumb_imgview"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:foregroundGravity="center" tools:ignore="RtlHardcoded"
+                android:contentDescription="@string/thumb_image"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/tv_judul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+            <TextView
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/tv_deskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:textSize="12sp"
+                    android:id="@+id/tv_kelas_oleh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#4D000000"
+                    android:drawablePadding="4dp"
+                    android:padding="3dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

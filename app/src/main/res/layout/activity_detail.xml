@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 - Present id.redlyst@gmail.com / https://github.com/redlyst/
+  ~ This file is subject to the terms and conditions defined in
+  ~ file 'LICENSE.txt', which is part of this source code package.
+  ~
+  -->
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ScrollView
+                android:layout_above="@id/btnBrowser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <ImageView
+                            android:adjustViewBounds="true"
+                            android:id="@+id/detail_imgview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/detail_image"/>
+                    <TextView
+                            android:id="@+id/tv_kelas_oleh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"
+                            android:background="#9A000000"
+                            android:drawablePadding="4dp"
+                            android:gravity="center_vertical"
+                            android:padding="8dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@android:color/white"/>
+                </FrameLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:padding="15dp">
+                    <TextView
+                            android:id="@+id/tv_judul"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+                    <TextView
+                            android:id="@+id/tv_deskripsi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"/>
+
+
+                    <TextView
+                            android:id="@+id/tv_referral"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:text="@string/referral_title" android:layout_marginTop="10dp"/>
+
+                    <TextView
+                            android:id="@+id/tv_detail_referral"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="20"
+                            android:text="@string/referral_description"/>
+
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_referral_code"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:maxLines="20"/>-->
+
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:gravity="center">
+                        <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:id="@+id/et_referral_code"
+                                android:textSize="14sp"
+                                android:layout_weight=".90" android:inputType="text"/>
+                        <Button
+                                style="@style/ButtonGeneral"
+                                android:text="@string/referral_btn"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/btnCopy"
+                                android:layout_weight=".10" android:layout_margin="5dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                            android:id="@+id/tv_pertanyaan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:text="@string/question_title" android:layout_marginTop="10dp"/>
+
+                    <TextView
+                            android:id="@+id/tv_detail_pertanyaan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="20"
+                            android:text="@string/question_description"/>
+
+
+                    <TextView
+                            android:id="@+id/tv_reviewer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:text="@string/reviewer_title" android:layout_marginTop="10dp"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/activity_vertical_margin"
+                            android:gravity="center">
+
+                        <ImageView
+                                android:adjustViewBounds="true"
+                                android:id="@+id/reviewer_imgview"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                                android:foregroundGravity="center" tools:ignore="RtlHardcoded"
+                                android:contentDescription="@string/reviewer_image"/>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                            <TextView
+                                    android:textColor="@color/colorAccent"
+                                    android:id="@+id/tv_reviewer_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"/>
+                            <TextView
+                                    android:id="@+id/tv_reviewer_title"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+
+                            <TextView
+                                    android:id="@+id/tv_reviewer_from"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/activity_vertical_margin"
+                            android:gravity="center">
+
+                        <ImageView
+                                android:adjustViewBounds="true"
+                                android:id="@+id/reviewer_imgview_1"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                                android:foregroundGravity="center" tools:ignore="RtlHardcoded"
+                                android:contentDescription="@string/reviewer_image"/>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                            <TextView
+                                    android:textColor="@color/colorAccent"
+                                    android:id="@+id/tv_reviewer_name_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"/>
+                            <TextView
+                                    android:id="@+id/tv_reviewer_title_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+
+                            <TextView
+                                    android:id="@+id/tv_reviewer_from_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <Button
+                android:layout_alignParentBottom="true"
+                style="@style/ButtonGeneral"
+                android:text="@string/register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnBrowser"/>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+

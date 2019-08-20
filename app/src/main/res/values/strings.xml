@@ -1,0 +1,27 @@
+<!--
+  ~ Copyright (c) 2019 - Present id.redlyst@gmail.com / https://github.com/redlyst/
+  ~ This file is subject to the terms and conditions defined in
+  ~ file 'LICENSE.txt', which is part of this source code package.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">Kelas Dicoding</string>
+    <string name="about">About</string>
+    <string name="profile_name">RedLyst</string>
+    <string name="profile_img">id.redlyst@gmail.com</string>
+    <string name="referral_title">Akademi Referral</string>
+    <string name="referral_description">Anda dapat memperoleh bonus point bila teman yang menggunakan kode referral yang
+        Anda bagikan, melakukan transaksi pada Kelas ini.
+    </string>
+    <string name="referral_btn">Copy</string>
+    <string name="question_title">Pertanyaan</string>
+    <string name="question_description">Bila Anda memiliki pertanyaan / kendala ketika belajar di kelas ini, Anda dapat
+        buka tab pertanyaan-pertanyaan yang sering diajukan di FAQ
+    </string>
+    <string name="reviewer_title">Tim Reviewer</string>
+    <string name="register_btn">Daftar Sekarang</string>
+    <string name="thumb_image">Thumb Image</string>
+    <string name="detail_image">Detail Image</string>
+    <string name="reviewer_image">Reviewer Image</string>
+</resources>
